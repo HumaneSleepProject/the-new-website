@@ -1,31 +1,14 @@
+/* 1. General Page Styling */
 body {
-    background-color: black; /* Pure black */
+    background-color: black; /* Full dark background */
     color: white;
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif; /* Modern font */
     margin: 0;
     padding: 0;
     position: relative;
 }
-header {
-    background-color: #1e0096;
-    padding: 20px;
-    color: white;
-}
-nav ul {
-    list-style-type: none;
-    padding: 0;
-}
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-button {
-    background-color: #28a745;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-}
+
+/* 2. Starry Background (Keeping Your Stars) */
 @keyframes twinkle {
     0% { opacity: 0.3; }
     50% { opacity: 1; }
@@ -41,3 +24,70 @@ button {
     animation: twinkle 3s infinite ease-in-out;
 }
 
+/* 3. Bold Title in a Purple Box */
+.title-box {
+    background-color: #5a0096; /* Deep purple */
+    color: white;
+    font-size: 36px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 40px auto;
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
+}
+
+/* 4. Navigation Bar */
+.navbar {
+    background-color: black;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 2px 5px rgba(255, 255, 255, 0.2);
+}
+
+/* 5. Navigation Links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ffcc00; /* Gold glow effect */
+}
+
+/* 6. Donate Button */
+.donate-button {
+    background-color: #28a745; /* Bright green */
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.donate-button:hover {
+    background-color: #ff4500; /* Orange when hovered */
+}
