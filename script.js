@@ -1,7 +1,7 @@
 console.log("Script loaded successfully!");
 // 1. Starry Night Effect
 document.addEventListener("DOMContentLoaded", () => {
-    const numStars = 150; // Number of stars
+  const numStars = 250; // More stars!
     for (let i = 0; i < numStars; i++) {
         let star = document.createElement("div");
         star.className = "star";
